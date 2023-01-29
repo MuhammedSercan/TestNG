@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 
 public class BlueRentalHomePage {
-
     public BlueRentalHomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -17,10 +16,10 @@ public class BlueRentalHomePage {
     @FindBy(id = "dropdown-basic-button")
     public WebElement userID;
 
+    @FindBy(linkText = "Logout")
+    public WebElement logOutLink;
 
-
-
-
-
+    @FindBy(xpath = "//button[.='OK']")
+    public WebElement OK;
 
 }
